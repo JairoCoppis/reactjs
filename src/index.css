@@ -36,3 +36,11 @@ code {
   justify-content: space-between;
   border: 1px solid black;
 }
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 200px;
+  height: 120px;
+}
