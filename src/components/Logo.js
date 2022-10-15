@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CartWidget = () => {
+const Logo = () => {
   return (
     <div>
         <img className="logo" src="./img/starbuckslogo.png" alt="" />
@@ -8,4 +8,4 @@ const CartWidget = () => {
   )
 }
 
-export default CartWidget
+export default Logo

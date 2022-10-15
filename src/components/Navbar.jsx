@@ -1,24 +1,23 @@
 import React from 'react'
-import { Button } from './Button'
-import CartWidget from './CartWidget'
+import {CartWidget} from './CartWidget'
+import Logo from './Logo'
+import { Button } from "./Button";
 
 export const Navbar = () => {
-  return ( //Agrgando CSS con className
+  return ( //Agregando CSS con className
             
             <nav className="navbarstyle"> 
               <div>
-                <CartWidget/>
+                <Logo/>
               </div>
                 <ul>
                     <li>Inicio</li>
                     <li>Catalogo</li>
                 </ul>
-                  <div>
-                      <span className="material-symbols-outlined"> 
-                        shopping_cart_checkout 
-                      </span>
-                        <Button text="Carrito"/>
-                  </div>
+                <div>
+                  <CartWidget/>
+                <Button text="Carrito"/>
+                </div>
             </nav>
   )
 }

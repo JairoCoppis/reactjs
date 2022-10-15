@@ -1,15 +1,18 @@
-import { Button } from "./Button"
+import {Button} from "./Button"
 
-export const Main = ({saludo}) => {
+export const ItemListContainer = ({greeting}) => {
 
     return (
         
         <div className="cards">
             <img src="./img/macchiato.png" alt="" />
+            <div>
             <article>
-             Hola! {saludo}
+                Hola! {greeting}
             </article>
-                <Button text="Comprar"/>
+            </div>
+            
+            <Button text="Comprar"/>
         </div>
         
     ) 
