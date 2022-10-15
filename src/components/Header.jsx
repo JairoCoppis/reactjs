@@ -1,13 +1,14 @@
-import Navbar from "./Navbar";
+import {Navbar} from "./Navbar";
 
-const Header = () => {
+export const Header = () => {
     return (
         <>
         <header>
             <Navbar/>
         </header>
         </>
+        
     );
 }
 
-export default Header
+
