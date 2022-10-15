@@ -7,7 +7,6 @@ export const Header = () => {
             <Navbar/>
         </header>
         </>
-        
     );
 }
 
