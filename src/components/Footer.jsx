@@ -1,8 +1,10 @@
-
-const Footer = () => {
+export const Footer = () => { //Ejemplo de Export nommbrado
   return (
-    <div>Footer</div>
+    <nav>
+        <ul>
+            <li>Quienes somos</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
   )
 }
-
-export default Footer

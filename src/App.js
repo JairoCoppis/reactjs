@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import {Footer} from './components/Footer'; //EJ Footer export nombrado (si hubiera mas de uno se usa la coma)
 import Main from './components/Main';
 
 function App() {
