@@ -1,6 +1,6 @@
 export const Footer = () => { //Ejemplo de Export nommbrado
   return (
-    <nav>
+    <nav className="footer">
         <ul>
             <li>Quienes somos</li>
             <li>Contacto</li>

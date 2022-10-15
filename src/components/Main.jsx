@@ -1,13 +1,25 @@
-const Main = (prop) => { 
+// const Main = (props) => { 
 
-    console.log(prop) //Props es un objeto
+//     console.log(props) //Props es un objeto
+
+//     return (
+
+//         <article>
+//             Hola! {props.saludo}
+//         </article>
+//     )
+// }
+
+// export default Main //Export default (Solo uno por archivo)
+
+const Main = ({saludo}) => { //Si pongo llaves hago el destructuring y no necesito acceder a la propiedad del objeto con un punto. En caso de querer usar mas prop le pongo una coma y accedo a edad, etc.
 
     return (
 
         <article>
-            Parrafo de Bienvenida! 
+            Hola! {saludo}
         </article>
     )
 }
 
-export default Main //Export defalt (Solo uno por archivo)
+export default Main //Export default (Solo uno por archivo)
