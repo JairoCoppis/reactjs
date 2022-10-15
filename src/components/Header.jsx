@@ -1,13 +1,10 @@
+import Navbar from "./Navbar";
+
 const Header = () => {
     return (
         <>
         <header>
-            <nav>
-                <ul>
-                    <li>Inicio</li>
-                    <li>Nosotros</li>
-                </ul>
-            </nav>
+            <Navbar/>
         </header>
         </>
     );
