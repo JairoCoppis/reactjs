@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Header/>
-    <Main saludo="Bienvenido" nombre="29"/>
+    <Main saludo="Bienvenid@" nombre="29"/>
     <Footer/>
     </>
   );

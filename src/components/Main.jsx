@@ -4,7 +4,8 @@ export const Main = ({saludo}) => {
 
     return (
         
-        <div>
+        <div className="cards">
+            <img src="./img/macchiato.png" alt="" />
             <article>
              Hola! {saludo}
             </article>

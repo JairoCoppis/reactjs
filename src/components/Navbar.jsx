@@ -4,12 +4,17 @@ import { Button } from './Button'
 export const Navbar = () => {
   return ( //Agrgando CSS con className
             
-            <nav className="navbar"> 
+            <nav className="navbarstyle"> 
                 <ul>
                     <li>Inicio</li>
                     <li>Nosotros</li>
                 </ul>
-                  <Button text="Carrito"/>
+                  <div>
+                      <span className="material-symbols-outlined"> 
+                        shopping_cart_checkout 
+                      </span>
+                        <Button text="Carrito"/>
+                  </div>
             </nav>
   )
 }

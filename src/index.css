@@ -21,3 +21,18 @@ code {
   background-color: black;
   color: white;
 }
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.navbarstyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+}
