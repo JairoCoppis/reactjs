@@ -8,7 +8,7 @@ export const ItemListContainer = ({greeting}) => {
             <img src="./img/macchiato.png" alt="" />
             <div>
             <article>
-                Hola! {greeting}
+                <h2>Hola! {greeting}</h2>
             </article>
             </div>
             
