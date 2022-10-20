@@ -2,12 +2,16 @@ import './App.css'; // Es una libreria o extension.
 import {Header} from './components/Header';
 import {Footer} from './components/Footer'; //EJ Footer export nombrado (si hubiera mas de uno se usa la coma)
 import {ItemListContainer} from './components/ItemListContainer';
+import {Contador} from './components/Contador';
+import ItemListCont from './components/ItemListCont';
 
 function App() {
   return (
     <>
     <Header/>
     <ItemListContainer greeting="Bienvenid@"/>
+    <ItemListCont/>
+    <Contador stock={10}/>
     <Footer/>
     </>
   );
