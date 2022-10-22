@@ -4,6 +4,7 @@ import {Footer} from './components/Footer'; //EJ Footer export nombrado (si hubi
 import {ItemListContainer} from './components/ItemListContainer';
 import {Contador} from './components/Contador';
 import ItemListCont from './components/ItemListCont';
+import ItemList from './components/ItemList';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header/>
     <ItemListContainer greeting="Bienvenid@"/>
     <ItemListCont/>
+    <ItemList/>
     <Contador stock={10}/>
     <Footer/>
     </>

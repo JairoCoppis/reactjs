@@ -6,18 +6,18 @@ const ItemListContainer = () => {
 
     useEffect(() => {
         //codigo que se ejecuta LUEGO del render y SIEMPRE que se renderice el componente
-        console.log('Me renderizo siempre');
+        //console.log('Me renderizo siempre');
     });
 
     useEffect(() => {
         //codigo que se ejecuta LUEGO del render, UNA sola vez
         //llamadas asincrónicas
-        console.log('Me renderizo 1 sola vez');
+        //console.log('Me renderizo 1 sola vez');
     }, []);
 
     useEffect(() => {
         //codigo que se ejecuta LUEGO del render, UNA sola vez y CADA VEZ QUE CAMBIE LA DEPENDENCIA
-        console.log('Me renderizo una vez y cada vez que cambie el texto');
+        //console.log('Me renderizo una vez y cada vez que cambie el texto');
     }, [texto]);
 
     const sumar = () => {
