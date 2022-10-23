@@ -4,7 +4,7 @@ import Logo from './Logo'
 import { Button } from "./Button";
 
 export const Navbar = () => {
-  return ( //Agregando CSS con className
+  return (
             <nav className="navbarstyle"> 
               <div>
                 <Logo/>

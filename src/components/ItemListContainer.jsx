@@ -1,6 +1,6 @@
 import {Button} from "./Button"
 
-export const ItemListContainer = ({greeting}) => {
+export const ItemListContainer = () => {
 
     return (
         
@@ -8,7 +8,7 @@ export const ItemListContainer = ({greeting}) => {
             <img src="./img/macchiato.png" alt="" />
             <div>
             <article>
-                <h2>Hola! {greeting}</h2>
+                
             </article>
             </div>
             
@@ -17,37 +17,3 @@ export const ItemListContainer = ({greeting}) => {
         
     ) 
 }
-
-
-//----------------------------------
-
-// const Main = ({saludo}) => { //Si pongo llaves hago el destructuring y no necesito acceder a la propiedad del objeto con un punto. En caso de querer usar mas prop le pongo una coma y accedo a edad, etc.
-
-//     return (
-
-//         <article>
-//             Hola! {saludo}
-//         </article>
-//     )
-// }
-
-// export default Main //Export default (Solo uno por archivo)
-
-
-
-//----------------------------------
-
-
-// const Main = (props) => { 
-
-//     console.log(props) //Props es un objeto
-
-//     return (
-
-//         <article>
-//             Hola! {props.saludo}
-//         </article>
-//     )
-// }
-
-// export default Main //Export default (Solo uno por archivo)
