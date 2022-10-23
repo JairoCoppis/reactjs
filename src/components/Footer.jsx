@@ -1,4 +1,4 @@
-export const Footer = () => { //Ejemplo de Export nommbrado
+export const Footer = () => {
   return (
     <nav className="footer">
         <ul>
