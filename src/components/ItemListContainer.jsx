@@ -18,7 +18,6 @@ export const ItemListContainer = ({greeting}) => {
     ) 
 }
 
-
 //----------------------------------
 
 // const Main = ({saludo}) => { //Si pongo llaves hago el destructuring y no necesito acceder a la propiedad del objeto con un punto. En caso de querer usar mas prop le pongo una coma y accedo a edad, etc.
