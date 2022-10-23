@@ -1,17 +1,15 @@
 import './App.css';
 import {Header} from './components/Header';
 import {Footer} from './components/Footer';
-import {ItemListContainer} from './components/ItemListContainer';
+import {ItemListContainer1} from './components/ItemListContainer1';
 import {Contador} from './components/Contador';
 
-import ItemList from './components/ItemList';
 
 function App() {
   return (
     <>
     <Header/>
-    <ItemListContainer />
-    <ItemList/>
+    <ItemListContainer1/>
     <Contador stock={10}/>
     <Footer/>
     </>

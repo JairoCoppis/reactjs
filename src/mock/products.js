@@ -1,9 +1,10 @@
-export const products = [ //Hacemos export nombrado
+export const products = [ 
     {
         id: 1,
         title: 'Remera verde',
         price: 2000,
         stock: 10,
+        description:"lorem1",
         category: 'remeras',
         img: 'https://res.cloudinary.com/ericwaje/image/upload/v1619372707/remera4_wyfums.jpg',
     },
@@ -12,6 +13,7 @@ export const products = [ //Hacemos export nombrado
         title: 'Billetera',
         price: 200,
         stock: 5,
+        description:"lorem2",
         category: 'billeteras',
         img: 'https://res.cloudinary.com/ericwaje/image/upload/v1619372706/billetera2C_bf0hvq.jpg',
     },
@@ -20,6 +22,7 @@ export const products = [ //Hacemos export nombrado
         title: 'Camisas',
         price: 3000,
         stock: 7,
+        description:"lorem3",
         category: 'camisas',
         img: 'https://res.cloudinary.com/ericwaje/image/upload/v1619372705/camisa2_tmojul.jpg',
     },
