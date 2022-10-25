@@ -1,20 +1,19 @@
-import { products } from "../mock/products"
 
-export const Item = () => {
+export const Item = ({producto}) => {
  
-    return (
+ return (
+        
         <div>
          <img
-             src={products.img}
+             src={producto.img}
              width="200px"
-             alt={products.title}
-        />
-
+             alt={producto.title}
+        /> 
         <article>
-            <h2>{products.title}</h2>
-            <h3>${products.price}.-</h3>
-         </article>
-         </div>
+            <h2>{producto.title}</h2>
+            <h3>${producto.price}.-</h3>
+        </article>
+        </div>
     )                     
 }
     
