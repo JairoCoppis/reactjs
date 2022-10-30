@@ -2,17 +2,21 @@ import './App.css';
 import {Header} from './components/Header';
 import {Footer} from './components/Footer';
 import {ItemListContainer1} from './components/ItemListContainer1';
-import {Contador} from './components/Contador';
-
+import {ItemDetailContainer } from './components/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
     <Header/>
-    <ItemListContainer1/>
-    <Contador stock={10}/>
+    <Routes>
+      <Route path="/" element={<ItemListContainer1/>}
+      />
+      <Route path="detail" element={<ItemDetailContainer/>}
+      />
+      </Routes>
     <Footer/>
-    </>
+    </BrowserRouter>
   );
 }
 
