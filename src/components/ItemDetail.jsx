@@ -1,12 +1,13 @@
 
 import { Contador } from './Contador'
-import { Item } from './Item'
 
-export const ItemDetail = () => {
+
+export const ItemDetail = ({item}) => {
   return (
     <div>
-        <Item/>
+       
         <Contador stock={10}/>
+
     </div>
   )
 }
