@@ -4,6 +4,7 @@ import {Footer} from './components/Footer';
 import {ItemListContainer1} from './components/ItemListContainer1';
 import {ItemDetailContainer } from './components/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Cart} from './components/Cart';
 
 function App() {
   return (
@@ -12,9 +13,15 @@ function App() {
     <Routes>
       <Route path="/" element={<ItemListContainer1/>}
       />
-      <Route path="detail" element={<ItemDetailContainer/>}
+      <Route path="/category/:categoryName" element={<ItemListContainer1/>}
       />
+      <Route path="/detail" element={<ItemDetailContainer/>}
+      />
+      <Route path="/cart" element={<Cart/>} 
+      />
+
       </Routes>
+      
     <Footer/>
     </BrowserRouter>
   );

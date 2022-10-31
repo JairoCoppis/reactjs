@@ -1,6 +1,5 @@
-import React from 'react'
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <div>
         <img className="logo" src="./img/starbuckslogo.png" alt="" />
@@ -8,4 +7,3 @@ const Logo = () => {
   )
 }
 
-export default Logo

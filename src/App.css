@@ -46,8 +46,19 @@ code {
   height: 100px;
 }
 
+.active{
+  border: 1px solid black;
+  padding: 4px 6px;
+  border-radius: 4px ;
+}
 
+.links{
+  padding:4px 6px ;
+  text-decoration: none;
+  color: black;
+  margin: 0px 2px;
 
+}
 
 
 

@@ -8,9 +8,9 @@ export const ItemListContainer1 = () => {
         <div className="cards">
             <div>
             <ItemListContainer/>
+             <Button text="Comprar"/>
             </div>
             
-            <Button text="Comprar"/>
         </div>
         
     ) 
