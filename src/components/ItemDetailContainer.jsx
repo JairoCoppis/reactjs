@@ -7,7 +7,7 @@ export const ItemDetailContainer = () => {
 
 const { idProducto } = useParams();
 
-const [item, setItem] = useState({}); 
+const [item, setItem] = useState({});
   
     useEffect(() => { 
         const getProduct = () => {
@@ -23,8 +23,7 @@ const [item, setItem] = useState({});
         };
         
         getProduct()
-            .then((res) => {
-                
+            .then((res) => { 
                 setItem(res);
             })
             .catch((error) => { 
