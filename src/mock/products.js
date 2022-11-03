@@ -22,7 +22,7 @@ export const products = [
         title: 'Shaken Lemonade Green Tea',
         price: 3000,
         stock: 7,
-        description:"lorem3",
+        description:"Nuestro té verde combinado con limón y mezclado con hielo.",
         category: 'Bebida Fria',
         img: './img/starbucks-green-tea.jpg',
     },

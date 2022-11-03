@@ -28,14 +28,32 @@ code {
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    margin-top: 5px;
+    margin-top: 20px;
+    padding: 10px 10px;
 }
 
+.articulo {
+  margin-left: 10px;
+}
+
+.imagen {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
 .navbarstyle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid black;
+  padding: 5px 5px;
+}
+
+.links{
+  padding:4px 6px;
+  text-decoration: none;
+  color: black;
+  margin: 0px 2px;
 }
 
 .logo {
@@ -43,7 +61,7 @@ code {
   justify-content: flex-start;
   align-items: flex-start;
   width: auto;
-  height: 100px;
+  height: 110px;
 }
 
 .active{
@@ -57,7 +75,6 @@ code {
   text-decoration: none;
   color: black;
   margin: 0px 2px;
-
 }
 
 
