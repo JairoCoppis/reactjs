@@ -4,9 +4,7 @@ import { useState } from "react";
     const [cantidad, setCantidad] = useState(1);
 
     const sumar = () => {
-        if (cantidad < stock) {
-            setCantidad(cantidad + 1);
-        }
+        cantidad < stock && setCantidad(cantidad + 1);
     };
 
     const restar = () => {

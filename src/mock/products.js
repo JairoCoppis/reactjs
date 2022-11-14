@@ -6,7 +6,7 @@ export const products = [
         stock: 10,
         description:"Café espresso con leche al vapor y toques de vainilla.",
         category: 'Cafe Caliente',
-        img: './img/vainilla.jpg',
+        img: 'https://res.cloudinary.com/dxqgdgglu/image/upload/v1667513249/Page/vainilla_im84k6.jpg',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const products = [
         stock: 5,
         description:"Hielo, vainilla y leche manchada con espresso, finalizada con el característico dibujo de caramelo.",
         category: 'Cafe Frio',
-        img: 'img/caramelice.jpg',
+        img: 'https://res.cloudinary.com/dxqgdgglu/image/upload/v1667513248/Page/caramelice_bmhxp8.jpg',
     },
     {
         id: 3,
@@ -24,9 +24,10 @@ export const products = [
         stock: 7,
         description:"Nuestro té verde combinado con limón y mezclado con hielo.",
         category: 'Bebida Fria',
-        img: './img/starbucks-green-tea.jpg',
+        img: 'https://res.cloudinary.com/dxqgdgglu/image/upload/v1667513257/Page/starbucks-green-tea_sdojjq.jpg',
     },
 ];
+
 
 export const getProducts = (categoryName) => {
     return new Promise((res, rej) => {
@@ -39,3 +40,15 @@ export const getProducts = (categoryName) => {
         }, 500);
     });
 };
+
+export const getProduct = (idProd) => {
+    return new Promise((res, rej) => {
+        const product = products.find((prod) => prod.id === +idProd);
+        setTimeout(() => {
+            res(product);
+        }, 500);
+    });
+};
+
+
+

@@ -2,8 +2,8 @@ export const Footer = () => {
   return (
     <nav className="footer">
         <ul>
-            <li>Quienes somos</li>
-            <li>Contacto</li>
+            <li>ReactJs - Comision 45060</li>
+          
         </ul>
     </nav>
   )
