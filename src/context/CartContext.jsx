@@ -53,6 +53,11 @@ export const CartProvider = ({ children }) => {
    
     const totalPrecio = () => 1000;
 
+    const cantidadDeProducto = (id) => {
+        const product = cart.find((prod) => prod.id === id);
+        return product?.cantidad;
+    };
+
     return (
         <CartContext.Provider
             value={{
@@ -62,6 +67,7 @@ export const CartProvider = ({ children }) => {
                 deleteOne,
                 totalUnidades,
                 totalPrecio,
+                cantidadDeProducto,
             }}
         >
             {children}

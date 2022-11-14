@@ -14,20 +14,20 @@ export const Cart = () => {
         );
 
     return (
-        <div>
+        <div className="cards">
             {cart.map((prod) => (
                 <div key={prod.id}>
-                    <img src={prod.img} alt={prod.title} width="80px" />
+                    <img src={prod.img} alt={prod.title} width="200px" />
                     <div>
                         <h3>{prod.title}</h3>
-                        <h3>{prod.cantidad}</h3>
+                        <h3>{prod.cantidad} Unidades</h3>
                         <button onClick={() => deleteOne(prod.id)}>
                             Eliminar
-                        </button>
+                        </button>  
                     </div>
                 </div>
             ))}
-            <h2>Total: {totalPrecio()}$</h2>
+             <h2>Total: {totalPrecio()}$</h2>
             <button onClick={deleteAll}>Vaciar carrito</button>
         </div>
     );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-  export const Contador = ({ stock, onAdd }) => {
-    const [cantidad, setCantidad] = useState(1);
+  export const Contador = ({ stock, onAdd, initial = 1 }) => {
+    const [cantidad, setCantidad] = useState(initial);
 
     const sumar = () => {
         cantidad < stock && setCantidad(cantidad + 1);
