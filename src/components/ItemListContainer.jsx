@@ -1,32 +1,47 @@
 import React, { useEffect, useState } from 'react';
-// import { products } from '../mock/products';
-import { getProducts } from '../mock/products';
 import { ItemList } from './ItemList';
 import { useParams } from 'react-router-dom';
+import { getDocs} from 'firebase/firestore';
+import { collectionProd } from '../services/firebaseConfig';
 
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]); 
-
     const { categoryName } = useParams();
 
     useEffect(() => { 
-            getProducts(categoryName)
-                .then((res) => {
-                    setItems(res);
-                })
-                .catch((error) => {
-                    console.log(error);
+        getDocs(collectionProd)
+            .then((res) => {
+                const products = res.docs.map((prod) => {
+                    return {
+                        id: prod.id,
+                        ...prod.data(),
+                    };
                 });
-        }, [categoryName]);
+                setItems(products);
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+    }, [categoryName]);
 
-    return (
+      return (
         <div id="container">
             <ItemList items={items}/>
         </div>
     );
 };
 
+
+
+// getProducts(categoryName)
+            //     .then((res) => {
+            //         setItems(res);
+            //     })
+            //     .catch((error) => {
+            //         console.log(error);
+            //     });
+     
 
 
 

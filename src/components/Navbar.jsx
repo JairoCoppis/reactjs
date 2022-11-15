@@ -1,7 +1,6 @@
 import React from 'react'
 import {CartWidget} from './CartWidget'
 import {Logo} from './Logo'
-// import { Button } from "./Button";
 import {Link, NavLink} from 'react-router-dom';
 
 export const Navbar = () => {
@@ -21,7 +20,6 @@ export const Navbar = () => {
 
                   <div>
                     <Link className="links" to="/cart"><CartWidget/></Link>
-                    {/* <Button text="Carrito"/> */}
                   </div>            
             </nav>
   )

@@ -3,7 +3,6 @@ export const Footer = () => {
     <nav className="footer">
         <ul>
             <li>ReactJs - Comision 45060</li>
-          
         </ul>
     </nav>
   )

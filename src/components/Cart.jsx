@@ -20,7 +20,7 @@ export const Cart = () => {
                     <img src={prod.img} alt={prod.title} width="200px" />
                     <div>
                         <h3>{prod.title}</h3>
-                        <h3>{prod.cantidad} Unidades</h3>
+                        <h3>{prod.cantidad} U/s</h3>
                         <button onClick={() => deleteOne(prod.id)}>
                             Eliminar
                         </button>  
