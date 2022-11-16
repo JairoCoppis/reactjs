@@ -1,15 +1,11 @@
 import { ItemListContainer } from "./ItemListContainer"
 
 export const ItemListContainer1 = () => {
-
-    return (
-        
+    return ( 
         <div className="cards">
             <div>
             <ItemListContainer/>
-            </div>
-            
-        </div>
-        
+            </div> 
+        </div>   
     ) 
 }

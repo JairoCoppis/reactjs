@@ -32,7 +32,6 @@ export const CartProvider = ({ children }) => {
         setCart(cartActualizado);
     };
 
-
     const deleteAll = () => {
         setCart([]);
     };
@@ -68,11 +67,8 @@ export const CartProvider = ({ children }) => {
                 totalUnidades,
                 totalPrecio,
                 cantidadDeProducto,
-            }}
-        >
+            }}>
             {children}
         </CartContext.Provider>
     );
 };
-
-

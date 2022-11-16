@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 
 export const Cart = () => {
-    //si quiero pintar los productos llamo al estado "cart" del contexto.
-    const { cart, deleteAll, deleteOne, totalPrecio } = useContext(CartContext); //cart = []
+    const { cart, deleteAll, deleteOne, totalPrecio } = useContext(CartContext);
 
     if (cart.length === 0)
         return (

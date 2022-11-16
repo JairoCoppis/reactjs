@@ -28,7 +28,6 @@ export const products = [
     },
 ];
 
-
 export const getProducts = (categoryName) => {
     return new Promise((res, rej) => {
         const prodFiltrados = products.filter(
@@ -49,6 +48,3 @@ export const getProduct = (idProd) => {
         }, 500);
     });
 };
-
-
-

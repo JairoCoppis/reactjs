@@ -7,11 +7,14 @@ import { collectionProd } from '../services/firebaseConfig';
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]); 
+
+    
     const { categoryName } = useParams();
 
     useEffect(() => { 
         getDocs(collectionProd)
             .then((res) => {
+                // console.log(res)
                 const products = res.docs.map((prod) => {
                     return {
                         id: prod.id,
@@ -31,35 +34,3 @@ export const ItemListContainer = () => {
         </div>
     );
 };
-
-
-
-// getProducts(categoryName)
-            //     .then((res) => {
-            //         setItems(res);
-            //     })
-            //     .catch((error) => {
-            //         console.log(error);
-            //     });
-     
-
-
-
-  //     const getProducts = () => {
-    //         return new Promise((res, rej) => {
-    //             setTimeout(() => {
-    //                 res(products);
-    //             }, 2000); 
-            
-    //         });
-    //     };
-        
-    //     getProducts()
-    //         .then((res) => {
-                
-    //             setItems(res);
-    //         })
-    //         .catch((error) => { 
-    //             console.log(error);
-    //         });
-    // }, []); 

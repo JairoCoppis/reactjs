@@ -21,13 +21,10 @@ function App() {
       />
       <Route path="/cart" element={<Cart/>} 
       />
-
-      </Routes>
-      
+      </Routes> 
     <Footer/>
     </CartProvider>
     </BrowserRouter>
   );
 }
-
 export default App;

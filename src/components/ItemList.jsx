@@ -10,7 +10,6 @@ export const ItemList = memo (
             })}
        </>  
     )  
-    },
-    
+    },   
     (a, b) => a.items === b.items
 );
