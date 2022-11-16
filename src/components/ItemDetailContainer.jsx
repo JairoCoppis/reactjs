@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { ItemDetail } from './ItemDetail';
 import { useParams } from 'react-router-dom';
-import { doc, getDoc } from 'firebase/firestore';
-import { collectionProd } from '../services/firebaseConfig';
+import { collection, doc, getDoc } from 'firebase/firestore';
+import { db } from '../services/firebaseConfig';
 
 export const ItemDetailContainer = () => {
-
+const [loading, setLoading] = useState(true);
 const { idProducto } = useParams();
 const [item, setItem] = useState({});
   
     useEffect(() => {
-
+        const collectionProd = collection(db, 'productos');
         const ref = doc(collectionProd, idProducto);
 
         getDoc(ref)
@@ -23,7 +23,18 @@ const [item, setItem] = useState({});
             .catch((error) => {
                 console.log(error);
             })
+            .finally(() => {
+                setLoading(false);
+            });
     }, [idProducto]); 
+
+    if (loading) {
+        return (
+            <div className="detail-container">
+                <h1>Cargando...</h1>
+            </div>
+        );
+    }
 
     return (
         <div id="container">
