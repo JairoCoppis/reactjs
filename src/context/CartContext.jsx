@@ -50,7 +50,14 @@ export const CartProvider = ({ children }) => {
         return count;
     };
    
-    const totalPrecio = () => 1000;
+    const totalPrecio = () => {
+        let count = 0;
+        const copia = [...cart];
+        copia.forEach((prod) => {
+            count = count += prod.cantidad * prod.price;
+        });
+        return count;
+    }; 
 
     const cantidadDeProducto = (id) => {
         const product = cart.find((prod) => prod.id === id);

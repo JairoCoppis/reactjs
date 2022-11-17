@@ -6,7 +6,7 @@ export const CartWidget = () => {
   const { totalUnidades } = useContext(CartContext);
   
   return (
-        <div>
+        <div>   <h5>Mis Compras</h5>
                 <span className="material-symbols-outlined"> 
                 shopping_cart_checkout 
                 </span>

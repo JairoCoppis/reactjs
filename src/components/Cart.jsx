@@ -8,7 +8,7 @@ export const Cart = () => {
     if (cart.length === 0)
         return (
             <h1>
-                Aún no hay productos, volvé al <Link to="/">Home</Link>
+                Aún no hay productos en el carrito, volvé a <Link to="/">Inicio</Link> o presiona el logo.
             </h1>
         );
 
@@ -28,6 +28,7 @@ export const Cart = () => {
             ))}
              <h2>Total: {totalPrecio()}$</h2>
             <button onClick={deleteAll}>Vaciar carrito</button>
+           <button className='links'> <Link to="/checkout">Checkout</Link> </button>
         </div>
     );
 };
