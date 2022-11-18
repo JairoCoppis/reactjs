@@ -9,6 +9,6 @@ export const Header = () => {
         </header>
         </>
     );
-}
+} //eliminar componente header y poner navbar en app
 
 

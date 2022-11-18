@@ -18,7 +18,7 @@ export const Form = () => {
         e.preventDefault();
         
         const objOrden = {
-            buyer: {
+            buyer: { //Crear estado
                 name,
                 lastName,
                 telefono: 202020,
@@ -48,7 +48,7 @@ export const Form = () => {
 
     if (orderId) {
         return (
-            <h1>Gracias por tu compra! tu número de seguimiento es {orderId}</h1>
+            <h1>Gracias por tu compra! tu número de seguimiento es {orderId} anotalo ahora y no lo pierdas.</h1>
         );
     }
 
