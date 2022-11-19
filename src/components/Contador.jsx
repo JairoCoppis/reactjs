@@ -30,18 +30,13 @@ import { useState } from "react";
                 <div>
                     <button onClick={restar}>-</button>
 
-                    <button disabled={cantidad === stock} onClick={sumar}>
-                        +
-                    </button>
+                    <button disabled={cantidad === stock} onClick={sumar}>+</button>
                 </div>
             </section>
             <div>
-                <button className="add" onClick={agregar}>
-                    Agregar al carrito
-                </button>
+                <button className="add" onClick={agregar}>Agregar al carrito</button>
                 <button onClick={reset}>Volver a 0</button> 
             </div>
         </div>
     );
 };
- 

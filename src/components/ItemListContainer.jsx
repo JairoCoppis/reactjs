@@ -8,7 +8,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]); 
-    const { categoryName } = useParams();
+    const {categoryName} = useParams();
     const [loading, setLoading] = useState(true);
 
     useEffect(() => { 
@@ -34,7 +34,6 @@ export const ItemListContainer = () => {
             .finally(() => {
                 setLoading(false);
             });
-
         return () => setLoading(true);
     }, [categoryName]);
 
@@ -47,7 +46,7 @@ export const ItemListContainer = () => {
     }
 
       return (
-        <div id="container">
+        <div className="principal"> 
             <ItemList items={items}/>
         </div>
     );

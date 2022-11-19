@@ -1,30 +1,27 @@
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import React, { useState } from 'react';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { useContext } from 'react';
 import { db } from '../services/firebaseConfig';
 import { CartContext } from '../context/CartContext';
 
-
 export const Form = () => {
     const [name, setName] = useState('');
     const [lastName, setLastName] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [adress, setAdress] = useState('');
+    const [mail, setMail] = useState('');
+
     const [orderId, setOrderId] = useState('');
     //crear un estado de loading
 
     const { cart, totalPrecio, deleteAll } = useContext(CartContext);
     const totalCarrito = totalPrecio();
 
-    const enviarDatos = (e) => {
+    const enviarData = (e) => {
         e.preventDefault();
         
         const objOrden = {
-            buyer: { //Crear estado
-                name,
-                lastName,
-                telefono: 202020,
-                direccion: 'Calle siempre viva 677',
-                email: 'JairoC@gmail.com',
-            },
+            buyer: {name,lastName,telefone,adress,mail},
             items: cart,
             total: totalCarrito,
             date: serverTimestamp(),
@@ -46,6 +43,12 @@ export const Form = () => {
 
     const handleLastName = (e) => setLastName(e.target.value);
 
+    const handleTelefone = (e) => setTelefone(e.target.value);
+
+    const handleAdress = (e) => setAdress(e.target.value);
+
+    const handleMail = (e) => setMail(e.target.value);
+
     if (orderId) {
         return (
             <h1>Gracias por tu compra! tu número de seguimiento es {orderId} anotalo ahora y no lo pierdas.</h1>
@@ -55,13 +58,14 @@ export const Form = () => {
     return (
         <div
             style={{
-                minHeight: '70vh',
                 display: 'flex',
-                justifyContent: 'center',
+                justifyContent: 'space-between',
                 alignItems: 'center',
-            }}
-        >
-            <form action="" onSubmit={enviarDatos}>
+                minHeight: '100px',
+                padding: '50px 50px',
+            }}>
+
+            <form action="" onSubmit={enviarData}>
                 <input
                     type="text"
                     placeholder="Nombre"
@@ -75,6 +79,27 @@ export const Form = () => {
                     name="apellido"
                     onChange={handleLastName}
                     value={lastName}
+                />
+                   <input
+                    type="text"
+                    placeholder="Telefono"
+                    name="telefono"
+                    onChange={handleTelefone}
+                    value={telefone}
+                />
+                   <input
+                    type="text"
+                    placeholder="Direccion"
+                    name="direccion"
+                    onChange={handleAdress}
+                    value={adress}
+                />
+                   <input
+                    type="text"
+                    placeholder="Mail"
+                    name="mail"
+                    onChange={handleMail}
+                    value={mail}
                 />
                 <button>Enviar</button>
             </form>

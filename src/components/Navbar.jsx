@@ -35,15 +35,14 @@ export const Navbar = () => {
 
                   <div>
                     <ul>                    
-                    {category.map((cat) => (
-                    <NavLink
-                        key={cat.id}
-                        className="links"
-                        to={`/category/${cat.path}`}
-                    >
-                        {cat.title}
-                    </NavLink>
-                ))}
+                      {category.map((cat) => (
+                        <NavLink
+                            key={cat.id}
+                            className="links"
+                            to={`/category/${cat.path}`}>
+                            {cat.title}
+                        </NavLink>
+                          ))}
                     </ul>
                   </div>
 
@@ -53,7 +52,3 @@ export const Navbar = () => {
             </nav>
   )
 }
-
-   /* <NavLink className="links" to="/category/Cafe Caliente">Cafe Caliente</NavLink>
-      <NavLink className="links" to="/category/Cafe Frio">Cafe Frio</NavLink>
-      <NavLink className="links" to="/category/Bebida Fria">Bebida Fria</NavLink> */

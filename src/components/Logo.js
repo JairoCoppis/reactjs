@@ -1,4 +1,3 @@
-
 export const Logo = () => {
   return (
     <div>
@@ -6,4 +5,3 @@ export const Logo = () => {
     </div>
   )
 }
-

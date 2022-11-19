@@ -10,8 +10,8 @@ const { idProducto } = useParams();
 const [item, setItem] = useState({});
   
     useEffect(() => {
-        const collectionProd = collection(db, 'productos');
-        const ref = doc(collectionProd, idProducto);
+        const collectionProducts = collection(db, 'productos');
+        const ref = doc(collectionProducts, idProducto);
 
         getDoc(ref)
             .then((res) => {
@@ -31,7 +31,7 @@ const [item, setItem] = useState({});
     if (loading) {
         return (
             <div className="detail-container">
-                <h1>Cargando...</h1>
+                <h1>Espere, Cargando..</h1>
             </div>
         );
     }

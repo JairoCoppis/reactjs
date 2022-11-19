@@ -20,21 +20,11 @@ const cantidad = cantidadDeProducto(item.id);
     <div className="cardsDetail" >
        <img src={item.img} alt={item.title} />
             <div>
-            {show ? (
-                    <h2>{item.title}</h2>
-                ) : (
-                    <h2>Este producto ya fue agregado al carrito</h2>
-                )}
-                <p>
-                    {item.description}
-                </p>
-                <h3>${item.price}</h3>
-                {show ? (
-                    <Contador stock={item.stock} onAdd={onAdd} initial={cantidad} />
-                ) : (
-                    <Link to="/cart">Ir al carrito</Link>
-                )}
-        </div>
+              {show ? (<h2>{item.title}</h2>) : (<h2>Este producto ya fue agregado al carrito</h2>)}
+                    <p>{item.description}</p>
+                      <h3>${item.price}</h3>
+              {show ? (<Contador stock={item.stock} onAdd={onAdd} initial={cantidad}/>) : (<Link to="/cart">Ir al carrito</Link>)}
+            </div>
     </div>
   )
 }
