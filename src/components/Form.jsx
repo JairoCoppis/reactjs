@@ -65,6 +65,8 @@ export const Form = () => {
                 padding: '50px 50px',
             }}>
 
+                <h1>CheckOut</h1>
+
             <form action="" onSubmit={enviarData}>
                 <input
                     type="text"
