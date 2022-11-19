@@ -101,7 +101,7 @@ export const Form = () => {
                     onChange={handleMail}
                     value={mail}
                 />
-                <button>Enviar</button>
+                <button className='btn-detalle'>Enviar</button>
             </form>
         </div>
     );

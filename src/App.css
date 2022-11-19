@@ -105,6 +105,17 @@ code {
   align-items: center;
 }
 
+.btn-detalle {
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  display: block;
+  color: black;
+  background-color: #ccc;
+  margin-top: 10px;
+  text-align: center;
+}
 
 
 

@@ -14,7 +14,7 @@ export const Item = ({producto}) => {
             <article className="articulo">
                 <h2>{producto.title}</h2>
                 <h3>${producto.price}.-</h3>
-                <Link to={`/item/${producto.id}`}>Ver detalles</Link>
+                <button className="btn-detalle"><Link to={`/item/${producto.id}`}>Ver detalles</Link></button>
             </article>
         </div>
     )                     

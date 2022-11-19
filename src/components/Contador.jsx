@@ -22,20 +22,17 @@ import { useState } from "react";
     }
 
     return (
-        <div style={{display:`flex`,
-        justifyContent:`center`,
-        alignItems:`center`}}>
+        <div className="principal">
             <section>
                 <p>{cantidad}</p>
                 <div>
-                    <button onClick={restar}>-</button>
-
-                    <button disabled={cantidad === stock} onClick={sumar}>+</button>
+                    <button className='btn-detalle' disabled={cantidad === stock} onClick={sumar}>+</button>
+                    <button className='btn-detalle' onClick={restar}>-</button>
                 </div>
             </section>
             <div>
-                <button className="add" onClick={agregar}>Agregar al carrito</button>
-                <button onClick={reset}>Volver a 0</button> 
+                <button className='btn-detalle' onClick={agregar}>Agregar al carrito</button>
+                <button className='btn-detalle' onClick={reset}>Volver a 0</button> 
             </div>
         </div>
     );
