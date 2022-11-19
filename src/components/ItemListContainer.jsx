@@ -5,6 +5,7 @@ import { collection, getDocs, query, where} from 'firebase/firestore';
 import { db } from '../services/firebaseConfig';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import {Portada} from '../components/Portada';
 
 export const ItemListContainer = () => {
     const [items, setItems] = useState([]); 
@@ -47,6 +48,7 @@ export const ItemListContainer = () => {
 
       return (
         <div className="principal"> 
+            <Portada/>
             <ItemList items={items}/>
         </div>
     );

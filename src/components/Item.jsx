@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 
 export const Item = ({producto}) => {
- 
  return ( 
         <div className="cards">
             <div className="imagen">
@@ -19,5 +18,4 @@ export const Item = ({producto}) => {
             </article>
         </div>
     )                     
-}
-    
+}   

@@ -17,7 +17,7 @@ export const ItemDetail = ({item}) => {
 const cantidad = cantidadDeProducto(item.id);
 
   return (
-    <div className="cardsDetail" >
+    <div className="cards" >
        <img src={item.img} alt={item.title} />
             <div>
               {show ? (<h2>{item.title}</h2>) : (<h2>Este producto ya fue agregado al carrito</h2>)}
