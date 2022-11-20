@@ -22,7 +22,7 @@ Luego va a tener que instalar todas las dependencias utilizadas en el sitio.
 Una vez dentro del sitio podras navegar por tres pestañas de producto, ver detalles de los mismos, agregar cantidad de unidades al carrito, ver el total y terminar la compra teniendo que rellenar los campos que luego van a poder ser consultados en FireBase a modo de ticket o comanda. 
 
 
-Te invito a ver el codigo y usarlo. dejo una ScreeShot del Main para que veas de que se trata. Saludos!
+Te invito a ver el codigo y usarlo. Dejo una ScreeShot del Main para que veas de que se trata. Saludos!
 
 ## Main
 
