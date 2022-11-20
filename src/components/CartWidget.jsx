@@ -7,8 +7,8 @@ export const CartWidget = () => {
   return (
         <div>   
           <h6>Mis Compras</h6>
-          <span className="material-symbols-outlined">shopping_cart_checkout</span>
-          <span>{totalUnidades() !== 0 && totalUnidades()}</span>
+            <span className="material-symbols-outlined">shopping_cart_checkout</span>
+              <span>{totalUnidades() !== 0 && totalUnidades()}</span>
         </div>
   )
 }

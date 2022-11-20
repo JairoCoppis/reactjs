@@ -25,15 +25,15 @@ import { useState } from "react";
         <div className="principal">
             <section>
                 <p>{cantidad}</p>
-                <div>
-                    <button className='btn-detalle' disabled={cantidad === stock} onClick={sumar}>+</button>
-                    <button className='btn-detalle' onClick={restar}>-</button>
-                </div>
+                    <div>
+                        <button className='btn-detalle' disabled={cantidad === stock} onClick={sumar}>+</button>
+                        <button className='btn-detalle' onClick={restar}>-</button>
+                    </div>
             </section>
-            <div>
-                <button className='btn-detalle' onClick={agregar}>Agregar al carrito</button>
-                <button className='btn-detalle' onClick={reset}>Volver a 0</button> 
-            </div>
+                <div>
+                    <button className='btn-detalle' onClick={agregar}>Agregar al carrito</button>
+                    <button className='btn-detalle' onClick={reset}>Volver a 0</button> 
+                </div>
         </div>
     );
 };

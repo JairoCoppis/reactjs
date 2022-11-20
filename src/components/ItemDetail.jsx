@@ -5,7 +5,6 @@ import { Contador } from './Contador'
 
 
 export const ItemDetail = ({item}) => {
-
   const [show, setShow] = useState(true);
   const { addToCart, cantidadDeProducto } = useContext(CartContext);
 
@@ -15,7 +14,6 @@ export const ItemDetail = ({item}) => {
 };
 
 const cantidad = cantidadDeProducto(item.id);
-
   return (
     <div className="cards" >
        <img src={item.img} alt={item.title} />

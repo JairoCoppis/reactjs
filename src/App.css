@@ -117,8 +117,13 @@ code {
   text-align: center;
 }
 
-
-
+.form {
+  display: 'flex';
+   justify-content: 'space-between';
+  align-items: 'center';
+  min-height: '100px';
+  padding: '50px 50px';
+}
 
 
 

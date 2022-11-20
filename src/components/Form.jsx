@@ -11,10 +11,7 @@ export const Form = () => {
     const [adress, setAdress] = useState('');
     const [mail, setMail] = useState('');
     const [mail2, setMail2] = useState('');
-
     const [orderId, setOrderId] = useState('');
-    //crear un estado de loading
-
     const { cart, totalPrecio, deleteAll } = useContext(CartContext);
     const totalCarrito = totalPrecio();
 
@@ -38,7 +35,7 @@ export const Form = () => {
             .catch((error) => {
                 console.log('Error', error);
             });
-    };
+        }
 
     const handleName = (e) => setName(e.target.value);
 
@@ -54,21 +51,13 @@ export const Form = () => {
 
     if (orderId) {
         return (
-            <h1>Gracias por tu compra! tu número de seguimiento es {orderId} anotalo ahora y no lo pierdas.</h1>
+            <h1>Gracias por tu compra! tu número de seguimiento es {orderId} anotalo y no lo pierdas.</h1>
         );
     }
 
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                minHeight: '100px',
-                padding: '50px 50px',
-            }}>
-
-                <h1>CheckOut</h1>
+        <div className='form'>
+            <h1>CheckOut</h1>
 
             <form action="" onSubmit={enviarData}>
                 <input
@@ -113,9 +102,9 @@ export const Form = () => {
                     onChange={handleMail2}
                     value={mail2}
                 />
-                <button className='btn-detalle'>Enviar</button>
+                <button className='btn-detalle' disabled={mail !== mail2}>Enviar</button>
                 
-                <h5 style={{marginTop: "10px"}}>* No olvides rellenar todos tus datos</h5>
+                <h5 style={{marginTop: "10px"}}>* No olvides rellenar todos tus datos.</h5>
             </form>
         </div>
     );

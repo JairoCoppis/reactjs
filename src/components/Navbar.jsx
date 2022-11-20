@@ -1,4 +1,3 @@
-import React from 'react'
 import { CartWidget } from './CartWidget'
 import { Logo } from './Logo'
 import { Link, NavLink } from 'react-router-dom';
@@ -42,7 +41,7 @@ export const Navbar = () => {
                             to={`/category/${cat.path}`}>
                             {cat.title}
                         </NavLink>
-                          ))}
+                      ))}
                     </ul>
                   </div>
 
