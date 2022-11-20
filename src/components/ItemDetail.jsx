@@ -22,7 +22,7 @@ const cantidad = cantidadDeProducto(item.id);
             <div>
               {show ? (<h2>{item.title}</h2>) : (<h2>Este producto ya fue agregado al carrito.</h2>)}
                     <p> Descripcion: {item.description}</p>
-                      <h3>${item.price}.-</h3>
+                      <h3>${item.price}.- c/u</h3>
               {show ? (<Contador stock={item.stock} onAdd={onAdd} initial={cantidad}/>) : (<button className='btn-detalle'><Link to="/cart">Ir al carrito</Link></button>)}
             </div>
     </div>

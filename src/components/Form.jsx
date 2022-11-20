@@ -10,6 +10,7 @@ export const Form = () => {
     const [telefone, setTelefone] = useState('');
     const [adress, setAdress] = useState('');
     const [mail, setMail] = useState('');
+    const [mail2, setMail2] = useState('');
 
     const [orderId, setOrderId] = useState('');
     //crear un estado de loading
@@ -21,7 +22,7 @@ export const Form = () => {
         e.preventDefault();
         
         const objOrden = {
-            buyer: {name,lastName,telefone,adress,mail},
+            buyer: {name,lastName,telefone,adress,mail,mail2},
             items: cart,
             total: totalCarrito,
             date: serverTimestamp(),
@@ -48,6 +49,8 @@ export const Form = () => {
     const handleAdress = (e) => setAdress(e.target.value);
 
     const handleMail = (e) => setMail(e.target.value);
+
+    const handleMail2 = (e) => setMail2(e.target.value);
 
     if (orderId) {
         return (
@@ -103,7 +106,16 @@ export const Form = () => {
                     onChange={handleMail}
                     value={mail}
                 />
+                <input
+                    type="text"
+                    placeholder="Volve a ingresar tu Mail"
+                    name="mail2"
+                    onChange={handleMail2}
+                    value={mail2}
+                />
                 <button className='btn-detalle'>Enviar</button>
+                
+                <h5 style={{marginTop: "10px"}}>* No olvides rellenar todos tus datos</h5>
             </form>
         </div>
     );
